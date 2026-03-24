@@ -108,7 +108,7 @@ class _KioskHomeScreenState extends State<KioskHomeScreen> {
       price: "49",
       category: "Coffees/Latte",
       subCategory: "Iced Coffee",
-      image: "assets/iced_brown.png",
+      image: "assets/iced_brownlatte.png",
     ),
     Product(
       id: "8",
@@ -128,7 +128,7 @@ class _KioskHomeScreenState extends State<KioskHomeScreen> {
       price: "55",
       category: "Foods/Snacks",
       subCategory: "Burger",
-      image: "assets/cheese_bur.png",
+      image: "assets/burger_cheese.png",
     ),
     Product(
       id: "10",
@@ -158,7 +158,7 @@ class _KioskHomeScreenState extends State<KioskHomeScreen> {
       price: "45",
       category: "Foods/Snacks",
       subCategory: "Hotdog",
-      image: "assets/hotdog_sandwich.png",
+      image: "assets/hotdog_sw.png",
     ),
     Product(
       id: "13",
@@ -168,7 +168,7 @@ class _KioskHomeScreenState extends State<KioskHomeScreen> {
       price: "65",
       category: "Foods/Snacks",
       subCategory: "Hotdog",
-      image: "assets/hotdog_overload.png",
+      image: "assets/hotdog_over.png",
     ),
     Product(
       id: "14",
@@ -198,17 +198,147 @@ class _KioskHomeScreenState extends State<KioskHomeScreen> {
       price: "65",
       category: "Foods/Snacks",
       subCategory: "Fries",
-      image: "assets/fries_sour_cream.jpg",
+      image: "assets/fries_sc.jpg",
     ),
     Product(
       id: "17",
       name: "Cheese Stick",
-      size: "6pcs",
+      size: "4 pcs",
       description: "Classic",
-      price: "50",
+      price: "20",
       category: "Foods/Snacks",
       subCategory: "Cheese Stick",
       image: "assets/cheese_stick.jpg",
+    ),
+    Product(
+      id: "18",
+      name: "Avocado",
+      size: "",
+      description: "Milkshake",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milkshake",
+      image: "assets/ms_avocado.png",
+    ),
+    Product(
+      id: "19",
+      name: "Chocolate",
+      size: "",
+      description: "Milkshake",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milkshake",
+      image: "assets/ms_chocolate.png",
+    ),
+    Product(
+      id: "20",
+      name: "Mango",
+      size: "",
+      description: "Milkshake",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milkshake",
+      image: "assets/ms_mango.png",
+    ),
+    Product(
+      id: "21",
+      name: "Melon",
+      size: "",
+      description: "Milkshake",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milkshake",
+      image: "assets/ms_melon.png",
+    ),
+    Product(
+      id: "22",
+      name: "Ube",
+      size: "",
+      description: "Milkshake",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milkshake",
+      image: "assets/ms_ube.png",
+    ),
+    Product(
+      id: "23",
+      name: "Okinawa",
+      size: "",
+      description: "Milktea",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milktea",
+      image: "assets/milktea_okinawa.png",
+    ),
+    Product(
+      id: "24",
+      name: "Cookies and Cream",
+      size: "",
+      description: "Milktea",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milktea",
+      image: "assets/milktea_cookies.png",
+    ),
+    Product(
+      id: "25",
+      name: "Dark Chocolate",
+      size: "",
+      description: "Milktea",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milktea",
+      image: "assets/milktea_darkchocolate.png",
+    ),
+    Product(
+      id: "26",
+      name: "Choco HazelNut",
+      size: "",
+      description: "Milktea",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milktea",
+      image: "assets/milktea_hazelnut.png",
+    ),
+    Product(
+      id: "26",
+      name: "Taro",
+      size: "",
+      description: "Milktea",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Milktea",
+      image: "assets/milktea_taro.png",
+    ),
+    Product(
+      id: "27",
+      name: "Green Apple",
+      size: "",
+      description: "Fruit Soda",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Fruit Soda",
+      image: "assets/fruitsoda_greenapple.png",
+    ),
+    Product(
+      id: "28",
+      name: "Strawberry",
+      size: "",
+      description: "Fruit Soda",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Fruit Soda",
+      image: "assets/fruitsoda_strawberry.png",
+    ),
+    Product(
+      id: "29",
+      name: "Blueberry",
+      size: "",
+      description: "Fruit Soda",
+      price: "",
+      category: "Drinks/Tea",
+      subCategory: "Fruit Soda",
+      image: "assets/fruitsoda_blueberry.png",
     ),
   ];
 
@@ -377,10 +507,15 @@ class _KioskHomeScreenState extends State<KioskHomeScreen> {
   }
 
   String _getSidebarIcon(String s) {
+    if (s == "Hot Coffee") return "assets/hotcoffee_sidebar.webp";
+    if (s == "Iced Coffee") return "assets/icecoffee_sidebar.png";
     if (s == "Fries") return "assets/fries_cheese.jpg";
     if (s == "Burger") return "assets/burger_classic.png";
-    if (s == "Hotdog") return "assets/hotdog_sandwich.png";
+    if (s == "Hotdog") return "assets/hotdog_sidebar.png";
     if (s == "Cheese Stick") return "assets/cheese_stick.jpg";
+    if (s == "Milkshake") return "assets/milkshake_sidebar.png";
+    if (s == "Milktea") return "assets/milktea_sidebar.png";
+    if (s == "Fruit Soda") return "assets/fruitsoda_sidebar.png";
     return "assets/arabic.png";
   }
 

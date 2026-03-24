@@ -91,28 +91,39 @@ flutter:
     - assets/logo.png
     - assets/arabic.png
     - assets/cafe.png
-    - assets/hot.jpg
-    - assets/ice.jpg
+    - assets/hotcoffee_sidebar.webp
+    - assets/icecoffee_sidebar.png
     - assets/iced_latte.png
     - assets/iced_mocha.png
-    - assets/iced_brown.png
+    - assets/iced_brownlatte.png
     - assets/burgers.jpg
     - assets/burger_classic.png
+    - assets/burger_cheese.png
     - assets/burger_egg.png
     - assets/burger_overload.png
-    - assets/cheese_bur.jpg
-    - assets/burger_classic.png
-    - assets/fruit_sb.jpg
-    - assets/hotdog_overload.png
-    - assets/hotdog_sandwich.png
-    - assets/milkshake_side.webp
-    - assets/ms_avocado.png
-    - assets/ms_cho.png
-    - assets/mt_sb.jpg
-    - assets/hotdog_sb.jpg
+    - assets/fruitsoda_sidebar.png
+    - assets/hotdog_over.png
+    - assets/hotdog_sw.png
+    - assets/milkshake_sidebar.png
+    - assets/hotdog_sidebar.png
     - assets/fries_sb.jpg
     - assets/cheese_stick_sb.jpg
     - assets/fries_bbq.jpg
     - assets/fries_cheese.jpg
     - assets/fries_sc.jpg
     - assets/cheese_stick.jpg
+    - assets/ms_avocado.png
+    - assets/ms_chocolate.png
+    - assets/ms_mango.png
+    - assets/ms_melon.png
+    - assets/ms_ube.png
+    - assets/milktea_sidebar.png
+    - assets/milktea_okinawa.png
+    - assets/milktea_cookies.png
+    - assets/milktea_darkchocolate.png
+    - assets/milktea_hazelnut.png
+    - assets/milktea_taro.png
+    - assets/fruitsoda_greenapple.png
+    - assets/fruitsoda_strawberry.png
+    - assets/fruitsoda_blueberry.png
+    - assets/fruitsoda_sidebar.png
